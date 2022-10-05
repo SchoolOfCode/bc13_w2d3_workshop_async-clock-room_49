@@ -6,11 +6,13 @@ const hand = document.querySelector(".hand");
 //create function that rotates clock hand and put hand.style.transform = `rotate(1deg)` within it;
 
 
-let handRotation = hand.style.transform;
+hand.style.transform;
 
 function rotateClockHand() {
-    for (let count = 0; count < 60; count++) {
-        handRotation = "6deg";
+    let degrees = 0;
+    for (let count = 0; count < 40; count++) {
+        degrees += 6
+        hand.style.transform = `rotate(${degrees}deg)`;
     }
 }
 
